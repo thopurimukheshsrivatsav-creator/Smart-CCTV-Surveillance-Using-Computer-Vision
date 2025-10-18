@@ -1,6 +1,6 @@
 # Smart-CCTV-Surveillance-Using-Computer-Vision
 
-             smart-cctv
+                                     Smart-CCTV Surveiliance
                                           Group 4
                                 1. Deekshitha Sarabudla
                                 2. Thopuri Mukhesh Srivatsav
