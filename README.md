@@ -3,8 +3,7 @@
                                           Group 4
 
                                 1. Deekshitha Sarabudla
-
-                                2. Thopuri Mukhesh Srivatsav
+                                2. Thopuri Mukhesh Srivatsav
                                 3. Shashank Reddy Peta
 
  
