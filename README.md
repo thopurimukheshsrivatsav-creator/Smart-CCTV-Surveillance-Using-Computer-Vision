@@ -1,4 +1,4 @@
-#              smart-cctv
+#            smart-cctv
 
                                           Group 4
 
@@ -39,6 +39,21 @@ It works on Windows, Linux, and macOS platforms.
                  LBPH (Local Binary Pattern Histogram) for face recognition.
 
                  SSIM (Structural Similarity Index) for object comparison.
+
+
+**Packages Needed:**
+pip install opencv-contrib-python
+pip install numpy
+pip install pillow
+pip install imutils
+pip install pandas
+pip install matplotlib
+pip install tk
+pip install playsound==1.2.2
+pip install smtplib   # (built-in in Python, no need usually)
+pip install numpy imutils playsound
+
+
 
 
 
@@ -109,6 +124,8 @@ It works on Windows, Linux, and macOS platforms.
 
 
 8\.**Report Generation:**      Creates a summary report of all detected events with timestamps and user details.
+
+
 
 
 
