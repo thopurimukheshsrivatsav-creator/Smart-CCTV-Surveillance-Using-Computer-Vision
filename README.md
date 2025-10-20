@@ -82,4 +82,6 @@ pip install playsound==1.2.2
 pip install smtplib
 
 
+## 🔗 Source  
+[🌐 Click here to open the Smart CCTV v2.0 Repository](https://github.com/Pawandeep-prog/smart-cctv-ver2.0)
 
