@@ -44,12 +44,14 @@ pip install playsound==1.2.2
 pip install smtplib
 
 
-🧠 Implementation (Command Prompt)
-▶️ To Run the First GUI Interface
+## 🧠 Implementation (Command Prompt)
+
+### ▶️ To Run the First GUI Interface
 
 Run the following command:
-
+```bash
 python main.py
+
 
 
 Launches the Smart CCTV Dashboard with multiple surveillance features.
