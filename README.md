@@ -43,15 +43,16 @@ pip install tk
 pip install playsound==1.2.2
 pip install smtplib
 
-## 🧠 Implementation (Command Prompt)
 
-### ▶️ To Run the First GUI Interface
-- Run the following command:
-  ```bash
-  python main.py
+🧠 Implementation (Command Prompt)
+▶️ To Run the First GUI Interface
+
+Run the following command:
+
+python main.py
 
 
-## Launches the Smart CCTV Dashboard with multiple surveillance features.
+Launches the Smart CCTV Dashboard with multiple surveillance features.
 
 Features:
 
@@ -76,3 +77,46 @@ Detects the direction of movement (entry or exit).
 Recording
 
 Records and saves video feeds locally with automatic timestamps.
+
+🚨 To Run the Second GUI (Email Alert System)
+
+Run the following command:
+
+python original.py
+
+
+Launches the Emergency Detection and Alert System, capable of sending automated email notifications.
+
+Features:
+
+Fire & Smoke Detection
+
+Detects fire or smoke and sends an email alert with the captured image.
+
+Prohibited Mode
+
+Detects entry in restricted/no-entry zones and sends an alert email with the intruder’s image.
+
+Restricted Mode
+
+Monitors time-based restricted areas (e.g., shops after closing hours) and sends alerts if unauthorized access occurs.
+
+Motion Detection
+
+Detects motion in focused areas (e.g., museums, offices) and triggers an alarm.
+
+Car Accident Detection
+
+Detects vehicle crashes and sends an emergency email alert with the captured image and camera location.
+
+Face Recognition
+
+Identifies known individuals and restricts access to unknown persons.
+
+Weapon Detection
+
+Detects weapons and sends an alert email with an image of the event.
+
+Report Generation
+
+Generates a summary report of all detected events with timestamps and user details.
