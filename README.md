@@ -42,16 +42,16 @@ It works on Windows, Linux, and macOS platforms.
 
 
 **Packages Needed:**
-pip install opencv-contrib-python
-pip install numpy
-pip install pillow
-pip install imutils
-pip install pandas
-pip install matplotlib
-pip install tk
-pip install playsound==1.2.2
-pip install smtplib   # (built-in in Python, no need usually)
-pip install numpy imutils playsound
+1.pip install opencv-contrib-python
+2.pip install numpy
+3.pip install pillow
+4.pip install imutils
+5.pip install pandas
+6.pip install matplotlib
+7.pip install tk
+8.pip install playsound==1.2.2
+9.pip install smtplib   
+10.pip install numpy imutils playsound
 
 
 
