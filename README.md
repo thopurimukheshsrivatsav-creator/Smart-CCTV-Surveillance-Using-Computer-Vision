@@ -42,45 +42,69 @@ pip install matplotlib
 pip install tk
 pip install playsound==1.2.2
 pip install smtplib
-🚀 Implementation Steps
-🖥️ 1. First GUI – Smart CCTV Dashboard
-To launch the main GUI:
 
-Implementation (command prompt)-
--python main.py  is used to run the first GUI Interface.
--Launch main.py to open the GUI dashboard.
+# 🧠 Implementation Guide
 
--Select a feature button (Monitor, Identify, Noise, In-Out, or Record).
-1.Face Identification:  Add a new member using the “Add Member” option.
-                      Train and test the LBPH model for face recognition.
+This section explains how to run and use both **GUI interfaces** of the Smart CCTV project via the **Command Prompt**.
 
-2.Monitor Feature:   Compares two frames using SSIM to detect stolen objects.
+---
 
-3.Noise Detection:   Calculates absolute frame differences to identify motion.
+## 🎛️ Running the First GUI — Smart CCTV Dashboard
 
-4.In-Out Detection:  Detects direction of movement (entry or exit).
+To launch the main interface, run:
+```bash
+python main.py
+🖥️ Overview
+This GUI opens the Smart CCTV Dashboard where you can monitor different smart surveillance features.
 
-5.Recording:         Records and saves video feeds locally with timestamps.
+🧩 Features
+1. 👤 Face Identification
+Add a new member using the “Add Member” option.
 
+Train and test the LBPH (Local Binary Pattern Histogram) model for face recognition.
 
--python original.py is used to run the second GUI for sending email alerts.
+2. 🧳 Monitor Feature
+Uses SSIM (Structural Similarity Index) to compare frames and detect stolen or missing objects.
 
-1.Fire & Smoke Detection: Detects fire or smoke and sends an email alert with the captured image.
+3. 🔊 Noise Detection
+Calculates absolute frame differences to identify motion or unusual activity.
 
-2.Prohibited Mode:        Detects anyone entering a no-entry zone and emails an alert with their image.
+4. 🚪 In–Out Detection
+Detects the direction of movement — whether a person is entering or exiting.
 
-3.Restricted Mode:        Works for areas allowed only during specific times (like shops); sends alerts if unauthorized people enter.
+5. 🎥 Recording
+Records and saves video feeds locally with automatic timestamps.
 
-4.Motion Detection:       Monitors focused areas (like museums) and triggers an alarm if motion is detected.
+🚨 Running the Second GUI — Email Alert & Emergency System
+To launch the alert system interface, run:
 
-5.Car Accident Detection: Detects vehicle crashes and sends an emergency email with the crash image and camera location.
+bash
+Copy code
+python original.py
+🔥 Emergency Features
+1. 🔥 Fire & Smoke Detection
+Detects fire or smoke in the frame and sends an email alert with the captured image.
 
-6.Face Recognition:       Identifies known people and restricts access to unknown individuals.
+2. 🚫 Prohibited Mode
+Identifies people entering no-entry zones and emails their images as alerts.
 
-7.Weapon Detection:       Detects weapons and sends an email alert with the captured image.
+3. ⏰ Restricted Mode
+Monitors time-based access zones (e.g., after shop hours) and sends alerts for unauthorized entries.
 
-8.Report Generation:      Creates a summary report of all detected events with timestamps and user details.
+4. 🎯 Motion Detection
+Detects motion in focused or high-security areas (like museums) and triggers an alarm.
 
+5. 🚗 Car Accident Detection
+Identifies vehicle accidents and emails emergency alerts with crash images and location.
 
+6. 🧍 Face Recognition
+Recognizes registered individuals and restricts access to unregistered or unknown people.
 
-Source link - https://github.com/Pawandeep-prog/smart-cctv-ver2.0
+7. 🔫 Weapon Detection
+Detects weapons and immediately sends an alert email with the image evidence.
+
+8. 🧾 Report Generation
+Generates a summary report of all detected events with timestamps and user details.
+
+🌐 Source Code
+📎 Original Repository: Smart CCTV on GitHub
