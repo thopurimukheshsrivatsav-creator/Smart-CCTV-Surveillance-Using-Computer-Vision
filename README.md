@@ -1,73 +1,115 @@
-             smart-cctv
-                                          Group 4
-                                1. Deekshitha Sarabudla
-                                2. Thopuri Mukhesh Srivatsav
-                                3. Shashank Reddy Peta
- 
-This is a gui interface for converting your normal camera to smart camera. Smart CCTV is a Python-based GUI application built using Computer Vision. It enhances traditional CCTV by adding intelligent detection capabilities.
+# 🎥 Smart CCTV  
+### Group 4  
+👩‍💻 1. Deekshitha Sarabudla  
+👨‍💻 2. Thopuri Mukhesh Srivatsav  
+👨‍💻 3. Shashank Reddy Peta  
 
-The first GUI system can detect theft, identify faces, monitor noise/motion, track visitors, and record video automatically. We can run it by typing  command  - python main.py in command prompt.
+---
 
-The second system is capable of detecting emergency situations like fire detection, prohibited mode, restricted mode, accident detection, face detection  and sending an alert email to the given email address. We can implement this interface using  typing - python original.py in the prompt.
+## 📘 Overview  
+**Smart CCTV** is a Python-based GUI application that transforms a normal camera into a **smart surveillance system**.  
+Built using **Computer Vision** and **Machine Learning**, it enhances traditional CCTV systems by detecting thefts, identifying faces, monitoring motion, detecting fire, and sending real-time alerts via email.
 
-It works on Windows, Linux, and macOS platforms.
+This project includes **two main GUI systems**:  
+1. **Main GUI (main.py)** – Handles object monitoring, face recognition, motion detection, and video recording.  
+2. **Alert GUI (original.py)** – Detects emergency situations such as fire, accidents, and restricted area violations, and sends alerts through email.
 
-Technologies Used:
+It supports **Windows**, **Linux**, and **macOS** platforms.
 
-Programming Language:        Python 3
-Libraries / Frameworks:      OpenCV, NumPy, scikit-image ,Tkinter ,smtplib, imutils, OpenCV and DNN Module.
+---
 
-Algorithms Used: Haar Cascade for face detection.
-                 LBPH (Local Binary Pattern Histogram) for face recognition.
-                 SSIM (Structural Similarity Index) for object comparison.
+## ⚙️ Technologies Used
 
-Packages Needed:
--pip install opencv-contrib-python
--pip install numpy
--pip install pillow
--pip install imutils
--pip install pandas
--pip install matplotlib
--pip install tk
--pip install playsound==1.2.2
--pip install smtplib   
--pip install numpy imutils playsound
+| Category | Tools / Libraries |
+|-----------|------------------|
+| **Programming Language** | Python 3 |
+| **Libraries / Frameworks** | OpenCV, NumPy, scikit-image, Tkinter, smtplib, imutils, DNN Module, Pillow |
+| **Algorithms** | Haar Cascade (Face Detection), LBPH (Face Recognition), SSIM (Object Comparison) |
 
-Implementation (command prompt)-
--python main.py  is used to run the first GUI Interface.
--Launch main.py to open the GUI dashboard.
+---
 
--Select a feature button (Monitor, Identify, Noise, In-Out, or Record).
-1.Face Identification:  Add a new member using the “Add Member” option.
-                      Train and test the LBPH model for face recognition.
+## 📦 Required Packages
 
-2.Monitor Feature:   Compares two frames using SSIM to detect stolen objects.
+Install the following dependencies before running the project:
 
-3.Noise Detection:   Calculates absolute frame differences to identify motion.
+```bash
+pip install opencv-contrib-python
+pip install numpy
+pip install pillow
+pip install imutils
+pip install pandas
+pip install matplotlib
+pip install tk
+pip install playsound==1.2.2
+pip install smtplib
+🚀 Implementation Steps
+🖥️ 1. First GUI – Smart CCTV Dashboard
+To launch the main GUI:
 
-4.In-Out Detection:  Detects direction of movement (entry or exit).
+bash
+Copy code
+python main.py
+Features:
+Face Identification:
 
-5.Recording:         Records and saves video feeds locally with timestamps.
+Add a new member using “Add Member”.
 
+Train and test the LBPH model for face recognition.
 
--python original.py is used to run the second GUI for sending email alerts.
+Monitor Feature:
 
-1.Fire & Smoke Detection: Detects fire or smoke and sends an email alert with the captured image.
+Compares frames using SSIM to detect stolen or missing objects.
 
-2.Prohibited Mode:        Detects anyone entering a no-entry zone and emails an alert with their image.
+Noise Detection:
 
-3.Restricted Mode:        Works for areas allowed only during specific times (like shops); sends alerts if unauthorized people enter.
+Detects motion by analyzing frame differences.
 
-4.Motion Detection:       Monitors focused areas (like museums) and triggers an alarm if motion is detected.
+In–Out Detection:
 
-5.Car Accident Detection: Detects vehicle crashes and sends an emergency email with the crash image and camera location.
+Detects movement direction (entry or exit).
 
-6.Face Recognition:       Identifies known people and restricts access to unknown individuals.
+Recording:
 
-7.Weapon Detection:       Detects weapons and sends an email alert with the captured image.
+Records and saves live video with timestamps.
 
-8.Report Generation:      Creates a summary report of all detected events with timestamps and user details.
+🔥 2. Second GUI – Alert & Emergency System
+To launch the second GUI:
 
+bash
+Copy code
+python original.py
+Features:
+Fire & Smoke Detection:
 
+Detects fire/smoke and emails an alert with the captured image.
 
-Source link - https://github.com/Pawandeep-prog/smart-cctv-ver2.0
+Prohibited Mode:
+
+Detects unauthorized entry in restricted areas and sends an alert.
+
+Restricted Mode:
+
+Alerts when someone enters during unauthorized hours (e.g., shop after closing).
+
+Motion Detection:
+
+Triggers alarm when movement is detected in a focused zone (e.g., museum).
+
+Car Accident Detection:
+
+Detects accidents and emails emergency images with location details.
+
+Face Recognition:
+
+Identifies registered faces and restricts unknown individuals.
+
+Weapon Detection:
+
+Detects weapons and sends an alert with the captured image.
+
+Report Generation:
+
+Generates a detailed summary report of all detected events with timestamps and user info.
+
+📎 Source Code
+Original Repository: Smart CCTV - GitHub Link
