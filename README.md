@@ -27,6 +27,44 @@ It supports **Windows**, **Linux**, and **macOS** platforms.
 | **Algorithms** | Haar Cascade (Face Detection), LBPH (Face Recognition), SSIM (Object Comparison) |
 
 ---
+Implementation (command prompt)-
+-python main.py  is used to run the first GUI Interface.
+-Launch main.py to open the GUI dashboard.
+
+-Select a feature button (Monitor, Identify, Noise, In-Out, or Record).
+1.Face Identification:  Add a new member using the “Add Member” option.
+                      Train and test the LBPH model for face recognition.
+
+2.Monitor Feature:   Compares two frames using SSIM to detect stolen objects.
+
+3.Noise Detection:   Calculates absolute frame differences to identify motion.
+
+4.In-Out Detection:  Detects direction of movement (entry or exit).
+
+5.Recording:         Records and saves video feeds locally with timestamps.
+
+
+-python original.py is used to run the second GUI for sending email alerts.
+
+1.Fire & Smoke Detection: Detects fire or smoke and sends an email alert with the captured image.
+
+2.Prohibited Mode:        Detects anyone entering a no-entry zone and emails an alert with their image.
+
+3.Restricted Mode:        Works for areas allowed only during specific times (like shops); sends alerts if unauthorized people enter.
+
+4.Motion Detection:       Monitors focused areas (like museums) and triggers an alarm if motion is detected.
+
+5.Car Accident Detection: Detects vehicle crashes and sends an emergency email with the crash image and camera location.
+
+6.Face Recognition:       Identifies known people and restricts access to unknown individuals.
+
+7.Weapon Detection:       Detects weapons and sends an email alert with the captured image.
+
+8.Report Generation:      Creates a summary report of all detected events with timestamps and user details.
+
+
+
+
 
 ## 📦 Required Packages
 
@@ -44,81 +82,4 @@ pip install playsound==1.2.2
 pip install smtplib
 
 
-## 🧠 Implementation (Command Prompt)
 
-### ▶️ To Run the First GUI Interface
-
-Run the following command:
-```bash
-python main.py
-
-
-
-Launches the Smart CCTV Dashboard with multiple surveillance features.
-
-Features:
-
-Face Identification
-
-Add a new member using the “Add Member” option.
-
-Train and test the LBPH (Local Binary Pattern Histogram) model for face recognition.
-
-Monitor Feature
-
-Compares two frames using SSIM (Structural Similarity Index) to detect stolen or missing objects.
-
-Noise Detection
-
-Calculates absolute frame differences to identify motion or unusual activity.
-
-In–Out Detection
-
-Detects the direction of movement (entry or exit).
-
-Recording
-
-Records and saves video feeds locally with automatic timestamps.
-
-🚨 To Run the Second GUI (Email Alert System)
-
-Run the following command:
-
-python original.py
-
-
-Launches the Emergency Detection and Alert System, capable of sending automated email notifications.
-
-Features:
-
-Fire & Smoke Detection
-
-Detects fire or smoke and sends an email alert with the captured image.
-
-Prohibited Mode
-
-Detects entry in restricted/no-entry zones and sends an alert email with the intruder’s image.
-
-Restricted Mode
-
-Monitors time-based restricted areas (e.g., shops after closing hours) and sends alerts if unauthorized access occurs.
-
-Motion Detection
-
-Detects motion in focused areas (e.g., museums, offices) and triggers an alarm.
-
-Car Accident Detection
-
-Detects vehicle crashes and sends an emergency email alert with the captured image and camera location.
-
-Face Recognition
-
-Identifies known individuals and restricts access to unknown persons.
-
-Weapon Detection
-
-Detects weapons and sends an alert email with an image of the event.
-
-Report Generation
-
-Generates a summary report of all detected events with timestamps and user details.
