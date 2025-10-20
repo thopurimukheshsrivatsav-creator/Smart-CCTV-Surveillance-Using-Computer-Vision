@@ -64,6 +64,11 @@ Implementation (command prompt)-
 
 
 
+Source link - https://github.com/Pawandeep-prog/smart-cctv-ver2.0
+
+
+
+
 
 
 ## 📦 Required Packages
@@ -82,11 +87,6 @@ pip install playsound==1.2.2
 pip install smtplib
 
 
-<p align="center">
-  <a href="https://github.com/Pawandeep-prog/smart-cctv-ver2.0">
-    <img src="https://img.shields.io/badge/Open%20in%20GitHub-Click%20Here-success?style=for-the-badge&logo=github" alt="Open Smart CCTV Repo">
-  </a>
-</p>
 
-
+    
 
