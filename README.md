@@ -46,70 +46,41 @@ pip install smtplib
 🖥️ 1. First GUI – Smart CCTV Dashboard
 To launch the main GUI:
 
-bash
-Copy code
-python main.py
-Features:
-Face Identification:
+Implementation (command prompt)-
+-python main.py  is used to run the first GUI Interface.
+-Launch main.py to open the GUI dashboard.
 
-Add a new member using “Add Member”.
+-Select a feature button (Monitor, Identify, Noise, In-Out, or Record).
+1.Face Identification:  Add a new member using the “Add Member” option.
+                      Train and test the LBPH model for face recognition.
 
-Train and test the LBPH model for face recognition.
+2.Monitor Feature:   Compares two frames using SSIM to detect stolen objects.
 
-Monitor Feature:
+3.Noise Detection:   Calculates absolute frame differences to identify motion.
 
-Compares frames using SSIM to detect stolen or missing objects.
+4.In-Out Detection:  Detects direction of movement (entry or exit).
 
-Noise Detection:
+5.Recording:         Records and saves video feeds locally with timestamps.
 
-Detects motion by analyzing frame differences.
 
-In–Out Detection:
+-python original.py is used to run the second GUI for sending email alerts.
 
-Detects movement direction (entry or exit).
+1.Fire & Smoke Detection: Detects fire or smoke and sends an email alert with the captured image.
 
-Recording:
+2.Prohibited Mode:        Detects anyone entering a no-entry zone and emails an alert with their image.
 
-Records and saves live video with timestamps.
+3.Restricted Mode:        Works for areas allowed only during specific times (like shops); sends alerts if unauthorized people enter.
 
-🔥 2. Second GUI – Alert & Emergency System
-To launch the second GUI:
+4.Motion Detection:       Monitors focused areas (like museums) and triggers an alarm if motion is detected.
 
-bash
-Copy code
-python original.py
-Features:
-Fire & Smoke Detection:
+5.Car Accident Detection: Detects vehicle crashes and sends an emergency email with the crash image and camera location.
 
-Detects fire/smoke and emails an alert with the captured image.
+6.Face Recognition:       Identifies known people and restricts access to unknown individuals.
 
-Prohibited Mode:
+7.Weapon Detection:       Detects weapons and sends an email alert with the captured image.
 
-Detects unauthorized entry in restricted areas and sends an alert.
+8.Report Generation:      Creates a summary report of all detected events with timestamps and user details.
 
-Restricted Mode:
 
-Alerts when someone enters during unauthorized hours (e.g., shop after closing).
 
-Motion Detection:
-
-Triggers alarm when movement is detected in a focused zone (e.g., museum).
-
-Car Accident Detection:
-
-Detects accidents and emails emergency images with location details.
-
-Face Recognition:
-
-Identifies registered faces and restricts unknown individuals.
-
-Weapon Detection:
-
-Detects weapons and sends an alert with the captured image.
-
-Report Generation:
-
-Generates a detailed summary report of all detected events with timestamps and user info.
-
-📎 Source Code
-Original Repository: Smart CCTV - GitHub Link
+Source link - https://github.com/Pawandeep-prog/smart-cctv-ver2.0
